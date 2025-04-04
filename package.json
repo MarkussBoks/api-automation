@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run books",
     "user": "mocha 'tests/scenarios/user/*.js' --reporter mochawesome --timeout 20000 user",
     "books": "mocha 'tests/scenarios/books/*.js' --reporter mochawesome --timeout 20000 books"
   },
