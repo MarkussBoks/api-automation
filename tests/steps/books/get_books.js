@@ -5,9 +5,13 @@ export async function getBooks() {
         await request(this, 'GET', '/books', undefined, false, 
             {
                 statusCode : 200,
-                expectedFields: ['0.id'],
+                expectedFields: [
+                    '0.id',
+                    '6.id',
+                ],
                 expectedValues: [
-                                    {path: '0.id', value: 1},
+                    { path: '0.id', value: 1 },
+                    //{ path: '6.id', value: 7 },
                                 ]
             }
         )
