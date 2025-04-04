@@ -5,7 +5,7 @@ before(async () => {
     await generateTestData()
 })
 
-describe('List books', () => {
+it('List books', () => {
     describe(`List books`, () => {
         getBooks()
     })
